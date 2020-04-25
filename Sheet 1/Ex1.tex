@@ -1,5 +1,11 @@
 \section*{Exercise 1}
-  \begin{tabular}{l|c|c|c|c}
+To calculate the class for every point we first need to find the $k$ closest points (depending on the norm).
+To archive this, a script like the following can be used:
+\lstinputlisting[language=matlab]{knn.m}
+Using the results the following table can be created. Note that the ties can be arbirarily chosen.
+
+
+  \centering \begin{tabular}{l|c|c|c|c}
     Norm&\multicolumn{2}{c}{Euclidian}&\multicolumn{2}{c}{Manhattan}\\\hline
     k&2&3&2&3\\\hline
     4,3,3&1&1&1&1\\
