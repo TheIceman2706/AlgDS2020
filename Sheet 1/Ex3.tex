@@ -1,0 +1,54 @@
+
+\section*{Exercise 3}
+
+\subsection*{a)}  % This is meant to be a section heading
+
+We have \[S=((x_{1},y_{1}), ..., (x_{k},y_{k}))\]  with \[x_{i}\in \left \{ -1, 1 \right \}^{n} , y_{i}\in \left \{ -1, 1 \right \} \forall i\in [k]\]
+
+Let p be the number of updates needed for the Perceptron Algorithm. 
+
+So we have (1) : \[\left \langle w_{p},x_{i}y_{i} \right \rangle\geq 0 \  \forall i\in [k]\] 
+
+And we have also : \[w_{p}-w_{p-1}=x_{p-1}y_{p-1}\]
+So : 
+\[\left \langle w_{p}-w_{p-1},x_{p-1}y_{p-1} \right \rangle=\left \langle x_{p-1}y_{p-1}, x_{p-1}y_{p-1}\right\rangle\]
+\[\left \langle w_{p}-w_{p-1},x_{p-1}y_{p-1} \right \rangle=n\]
+\[\left \langle w_{p},x_{p-1}y_{p-1} \right \rangle - \left \langle w_{p-1},x_{p-1}y_{p-1} \right \rangle=n\]
+Using (1) we have :\[\left \langle w_{p-1},x_{p-1}y_{p-1} \right \rangle + n \geq 0 \]
+\[\left \| w_{p-1} \right \| \left \| x_{p-1}y_{p-1} \right \| + n \geq \left \langle w_{p-1},x_{p-1}y_{p-1} \right \rangle + n \geq 0\]
+
+And we saw in the lecture that for each $i\leq p-1$ :
+
+\[\left \| w_{i} \right \| \leq \sqrt{i}\]
+ Thus :
+ \[n+ n^{2}(p-1) \geq n+ n^{2}\sqrt{p-1}\geq 0\]
+Finally:
+\[1-\frac{1}{n}\leq p\]
+
+ 
+
+\subsection*{b)}
+We have that the function: \[maj(x_{i})=\begin{cases} 1 & \text{ if } \sum_{j=1 }^{n}x_{ij}> 0 \\ -1 & \text{ else } \end{cases}\]
+
+If we have $\sum_{j=1 }^{n}x_{ij}> 0$, we need to find $w$ such as  \[\left \langle w,x_{i} \right \rangle\geq 0 \  \forall i\]
+\[\left \langle w,x_{i} \right \rangle =\sum_{j=1}^{n}w_{j}x_{ij}\]
+for w=(1,..,1) we have \[\left \langle w,x_{i} \right \rangle =\sum_{j=1 }^{n}x_{ij}> 0\]
+
+We need to normalize this w, so finally our normalized vector w is :\[w=(\frac{1}{n},...,\frac{1}{n})\]
+
+To find an upper bound on the number of updates of w the Perceptron Algorithm performs for any training set for the function maj, we need to find the margin: \[min_{(x,y)\in S}\left | \left \langle w,x \right \rangle \right |\]
+And S is a normalised set
+ We have for each p: 
+ \[\left | \left \langle w,x_{p} \right \rangle \right |=\left | \sum_{j=1}^{n} \frac{x_{pj}}{n^{2}} \right |\]
+ And because n is an odd number so will must have :
+ \[\frac{1}{n^{2}}\leq \left | \sum_{j=1}^{n^{2}} \frac{x_{pj}}{n^{2}} \right |\]
+
+So we found a lower bound, we just need to find a vector that  verify  it, and a vector that have the majority positive or negative by 1 elements verify it.
+
+So the margin is: \[\gamma =\frac{1}{n^{2}}\]
+Thus ( using theorem 1.10) we find that the upper bound is : 
+\[n^{4} =\frac{1}{\gamma^{2}}\]
+ 
+\subsection*{ c)}
+ Yes, we will still find a linear separator that realizes maj. Because the Perceptron Algorithm has no restriction on the set. 
+  
