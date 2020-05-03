@@ -1,9 +1,19 @@
+\documentclass[12pt,a4paper]{article}
 
-\section*{Exercise 3}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
 
-\subsection*{a)}  % This is meant to be a section heading
 
-We have \[S=((x_{1},y_{1}), ..., (x_{k},y_{k}))\]  with \[x_{i}\in \left \{ -1, 1 \right \}^{n} , y_{i}\in \left \{ -1, 1 \right \} \forall i\in [k]\]
+
+
+\begin{document}
+\textbf{Exercise 3}
+
+a)   % This is meant to be a section heading
+
+We have S=((x_{1},y_{1}), ..., (x_{k},y_{k}))\  with\ \[x_{i}\in \left \{ -1, 1 \right \}^{n} , y_{i}\in \left \{ -1, 1 \right \} \forall i\in [k]\]
 
 Let p be the number of updates needed for the Perceptron Algorithm. 
 
@@ -17,7 +27,7 @@ So :
 Using (1) we have :\[\left \langle w_{p-1},x_{p-1}y_{p-1} \right \rangle + n \geq 0 \]
 \[\left \| w_{p-1} \right \| \left \| x_{p-1}y_{p-1} \right \| + n \geq \left \langle w_{p-1},x_{p-1}y_{p-1} \right \rangle + n \geq 0\]
 
-And we saw in the lecture that for each $i\leq p-1$ :
+And we saw in the lecture that for each i\leq p-1 :
 
 \[\left \| w_{i} \right \| \leq \sqrt{i}\]
  Thus :
@@ -25,16 +35,19 @@ And we saw in the lecture that for each $i\leq p-1$ :
 Finally:
 \[1-\frac{1}{n}\leq p\]
 
+So 1 is the minimal number of updates.
+
  
 
-\subsection*{b)}
+b)
 We have that the function: \[maj(x_{i})=\begin{cases} 1 & \text{ if } \sum_{j=1 }^{n}x_{ij}> 0 \\ -1 & \text{ else } \end{cases}\]
 
-If we have $\sum_{j=1 }^{n}x_{ij}> 0$, we need to find $w$ such as  \[\left \langle w,x_{i} \right \rangle\geq 0 \  \forall i\]
+If we have \sum_{j=1 }^{n}x_{ij}> 0, we \ need \ to \ find \ w \ such \ as  \[\left \langle w,x_{i} \right \rangle\geq 0 \  \forall i\]
 \[\left \langle w,x_{i} \right \rangle =\sum_{j=1}^{n}w_{j}x_{ij}\]
 for w=(1,..,1) we have \[\left \langle w,x_{i} \right \rangle =\sum_{j=1 }^{n}x_{ij}> 0\]
 
-We need to normalize this w, so finally our normalized vector $w$ is :\[w=(\frac{1}{\sqrt{n}},...,\frac{1}{\sqrt{n}})\]
+We need to normalize this w, so finally our normalized vector w is :\[w=(\frac{1}{\sqrt{n}
+},...,\frac{1}{\sqrt{n}})\]
 
 To find an upper bound on the number of updates of w the Perceptron Algorithm performs for any training set for the function maj, we need to find the margin: \[min_{(x,y)\in S}\left | \left \langle w,x \right \rangle \right |\]
 And S is a normalised set
@@ -49,6 +62,12 @@ So the margin is: \[\gamma =\frac{1}{n}\]
 Thus ( using theorem 1.10) we find that the upper bound is : 
 \[n^{2} =\frac{1}{\gamma^{2}}\]
  
-\subsection*{ c)}
+ c) 
+ 
  Yes, we will still find a linear separator that realizes maj. Because the Perceptron Algorithm has no restriction on the set. 
   
+
+
+
+
+\end{document}
