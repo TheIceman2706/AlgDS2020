@@ -1,0 +1,46 @@
+\section*{Exercise 1}
+\subsection*{a)}
+Let \[X_2=Y_1Y_2\] with $Y_1,Y_2$ representing one throw each.
+Because $\text{E}(XY)=\text{E}(X)\text{E}(Y)$ for independant $X,Y$ 
+\[\text{E}(X_2) = \text{E}(Y_1Y_2) = \text{E}(Y_1) \text{E}(Y_2) \] holds.
+With $\text{E}(Y_1)=\text{E}(Y_2)=3.5$ this lead to
+\[\text{E}(X_2)= 3.5^2 = 12.25 \].
+We further know that $\text{Var}(X_2) = \text{E}(X_2^2) - \text{E}(X_2)^2$.
+Therefore \[\text{Var}(X_2) = \text{E}(Y_1^2Y_2^2) - 12.25^2 = \text{E}(Y_1^2)\text{E}(Y_2^2)-12.25^2 = \frac{91^2}{36} -12.25^2 \approx 79.97 \], beacuse $\text{E}(Y_1^2)=\text{E}(Y_2^2)=\frac{91}{6}$.
+
+\subsection*{b)}
+
+Let \[X_n = Y_1Y_2\ldots Y_n\] with $Y_1,\ldots,Y_n$ independent and describing one throw each.
+Then \[\text{E}(X_n) = \prod_{i=1}^{n}\text{E}(Y_i)\].
+Using $\text{E}(Y_i) = 3.5 \forall i$ \[\text{E}(X_n)=3.5^n\].
+As above \[
+\text{Var}(X_n)= \text{E}(X_n^2)-\text{E}(X_n)^2= \prod_{i=1}^{n}\text{E}(Y_i^2)-3.5^{2n} = \frac{91^n-73.5^n}{6^n}\].
+
+\subsection*{c)}
+Let $X_i\in \lbrace0;1\rbrace$ with $X_i = \begin{cases}
+1 & \text{throw results in one}\\0&\text{otherwise}
+\end{cases}$ then \[X = \sum_{i=1}^{200}X_i\] is the number of ones in 200 throws.
+Observe that \[\text{Pr}(X_i=1) = \frac{1}{6}= 1- \text{Pr}(X_i=0) \forall i\in [n]\].
+
+Then \[\text{E}(X)=\sum_{i=1}^{200}\text{E}(X_i)=\sum_{i=1}^{200}\frac{1}{6} = \frac{200}{6}\]
+\[\text{E}(X^2)=\left(\sum_{i=1}^{200}\text{E}(X_i)\right)^2 = \text{E}(X)^2\].
+This leads to \[\text{Var}(X) = \text{E}(X^2)-\text{E}(X)^2 = 0\].
+
+The Probaility to encounter at most 7 ones in 200 throws is \[\text{Pr}(X\le7) = \text{Pr("193 times not 1")} = \prod_{i=1}^{193}\frac{5}{6}\le7\times10^{-16}\].
+
+
+
+The inequalities yield the following borders:
+\paragraph{Chebyshev}
+\[\text{Pr}(|X-\text{E}(X)|\ge\frac{158}{6})\le\frac{6^2 \text{Var}(X)}{158} = 0 \]
+where $\frac{158}{6}$ is the minimum distance 7 ones are from the Expectation.
+
+\paragraph{Chernoff}
+\[\text{Pr}(X\le \left(1-\frac{158}{200}\right)\text{E}(X) ) \le e^{-\frac{\frac{200}{6}\frac{158^2}{200^2}}{2}} = 0.0000303818 \]
+where $\left(1-\frac{158}{200}\right)\text{E}(X) = 7$.
+
+\paragraph{Hoeffding}
+\[ \text{Pr}(X\le \frac{200}{6}-\left(\frac{1}{6}-\frac{7}{200}\right)200)\le e^{-2\cdot200\cdot\left(\frac{1}{6}-\frac{7}{200}\right)} = 0.009736638 \]
+
+In this case Chernoff's inequality gives the best bound.
+Chebyshev's inequality does not work here because $\text{E}(X)^2 = \text{E}(X^2) \Rightarrow\text{Var}(X)=0$.
