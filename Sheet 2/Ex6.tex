@@ -1,0 +1,38 @@
+\section*{Exercise 6}
+
+
+With $\alpha=\frac{1}{2}$, the event sequence 121234 and \[L=
+\begin{pmatrix}
+1 & 1 & 0 & 0\\ 
+0 & 1 & 1 & 1\\ 
+1 & 0 & 1 & \frac{1}{2}
+\end{pmatrix}
+\]
+
+
+\subsection*{a)} Using the MWU algorithm, we find :
+
+
+\begin{itemize}
+    \item $\omega^{(1)} = (1,1,1)$
+    \item $\omega^{(2)} = (\frac{1}{2},1,\frac{1}{2})$
+    \item $\omega^{(3)} = (\frac{1}{4},\frac{1}{2},\frac{1}{2})$
+    \item $\omega^{(4)} = (\frac{1}{8},\frac{1}{2},\frac{1}{4})$
+    \item $\omega^{(5)} = (\frac{1}{16},\frac{1}{4},\frac{1}{4})$
+    \item $\omega^{(6)} = (\frac{1}{16},\frac{1}{8},\frac{1}{8})$
+    \item And finally : $\omega^{(7)} = (\frac{1}{16},\frac{1}{16},0.09)$
+\end{itemize}
+
+\subsection*{b)} Using the definition of the probability distribution, we find : 
+
+\begin{itemize}
+    \item The probability to follow the advice of expert 1 in round 6 is 0.2
+    \item The probability to follow the advice of expert 2 in round 6 is 0.4
+    \item The probability to follow the advice of expert 3 in round 6 is 0.4
+\end{itemize}
+
+So : $p^{(6)}=(0.2,0.4,0.4)$
+
+\subsection*{c)}
+Even if we change the order the result of $\omega^{(7)}$ will stay the same, because it does not depend on the order :
+\[\omega_{i}^{(t+1)}=(1-\alpha )^{\sum_{s=1}^{t}L_{ij(s)}}\omega _{i}^{(1)}\]
