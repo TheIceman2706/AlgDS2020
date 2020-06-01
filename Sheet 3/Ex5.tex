@@ -1,0 +1,24 @@
+\section*{Exercise 5}
+\subsection*{a)}
+
+if $A = BB^T$:
+observe that $A$ i s symmetric.
+ \[x^TAx = x^TBB^Tx = (B^Tx)^TB^Tx = ||B^Tx|| \ge 0\]
+ so $A$ is psd.
+ 
+ 
+if $A$ is psd:
+THere is an orthogonal matrix $U$ such taht $A=UDU^T$ with $D=\text{diag}(\lambda_1,\cdots,\lambda_n)$.
+We can write $D=R\times R$ with $R=\text{diag}(\sqrt{\lambda_1},\cdots,\sqrt{\lambda_n})$.
+So \[A=UR\times RU^T = UR(UR)^T\].
+So there is a $B = UR$ such that $A = BB^T$.
+
+\subsection*{b)}
+Let $A = \left(\begin{matrix}
+1&2\\2&1
+\end{matrix}\right)$.
+$A$ is not psd because $\left(\begin{matrix}
+-1 & 1
+\end{matrix}\right)A\left(\begin{matrix}
+-1 & 1
+\end{matrix}\right)^T = -2 < 0$.

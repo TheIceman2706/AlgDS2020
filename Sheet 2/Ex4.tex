@@ -1,0 +1,17 @@
+\section*{Exercise 4}
+\subsection*{a)}
+For a set of 12 points of $X$ you can choose a 12 elements set of $H$ that covers all points of the set.
+To cover 11 points of the set of $X$ you can choose  the set of $H$ such that 11 points of the set of $X$ were covered and one is not covered. You can do this for all of the sets of 11 points. Analogous you can do this for 10 points of $X$ till no point is covered by the subset of $H$.
+So a set of 12 points of $X$ are shattered.
+
+If you choose 13 points of $X$ you just can cover 12 points. So it is impossible to cover 13 opints of $X$ with the subset of $H$.
+So $\text{VC}(H)=12$.
+
+\subsection*{b)}
+The VC-dimension for all circles in the plane is 3.
+
+The VC-dimension is at least 3 because using circles one can always seperate two points from one other  (by setting up a circle ($r$=0) around the single point and defining it inside or outside the subset) and obviously include all three or none.
+
+It's VC-dimension is at most 3, because with a circle it is not possible to generate all two element subsets from four points.
+No matter how the four points are distributet across $\mathbb{R}^2$ for at least one possible two element subset one other point is 'in the way' of the circle.
+

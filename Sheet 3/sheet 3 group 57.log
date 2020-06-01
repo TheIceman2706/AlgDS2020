@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.7.27)  17 MAY 2020 21:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.7.27)  1 JUN 2020 20:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**"./sheet 2 solution.tex"
-(./sheet 2 solution.tex
+**"./sheet 3 group 57.tex"
+(./sheet 3 group 57.tex
 LaTeX2e <2017-04-15>
 Babel <3.12> and hyphenation patterns for 84 language(s) loaded.
 (b:/Programs/texlive/2015/texmf-dist/tex/latex/koma-script/scrartcl.cls
@@ -1266,8 +1266,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 LaTeX Warning: Unused global option(s):
     [graphics].
 
-(./sheet 2 solution.aux)
-\openout1 = `"sheet 2 solution.aux"'.
+(./sheet 3 group 57.aux)
+\openout1 = `"sheet 3 group 57.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
 LaTeX Font Info:    ... okay on input line 43.
@@ -1337,9 +1337,9 @@ LaTeX Info: Redefining \ref on input line 43.
 LaTeX Info: Redefining \pageref on input line 43.
 LaTeX Info: Redefining \nameref on input line 43.
 
-(./sheet 2 solution.out) (./sheet 2 solution.out)
+(./sheet 3 group 57.out) (./sheet 3 group 57.out)
 \@outlinefile=\write4
-\openout4 = `"sheet 2 solution.out"'.
+\openout4 = `"sheet 3 group 57.out"'.
 
 LaTeX Font Info:    Try loading font information for U+lasy on input line 46.
 
@@ -1363,52 +1363,45 @@ Overfull \hbox (24.81905pt too wide) in paragraph at lines 46--46
 (./Ex1.tex [1
 
 
-{b:/Programs/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]) (
-./Ex3.tex) (./Ex4.tex [3]) (./Ex6.tex
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 17.
-
-(b:/Programs/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 17.
-) [4]
+{b:/Programs/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]) (./Ex
+2.tex [2]) (./Ex3.tex [3]) (./Ex4.tex) (./Ex5.tex) [4]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 51.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 51.
 
-(./sheet 2 solution.aux)
+(./sheet 3 group 57.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 51.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 51.
-Package rerunfilecheck Info: File `"sheet 2 solution".out' has not changed.
+Package rerunfilecheck Info: File `"sheet 3 group 57".out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 51.
  ) 
 Here is how much of TeX's memory you used:
- 30659 strings out of 492990
- 709564 string characters out of 6136334
+ 30694 strings out of 492990
+ 710456 string characters out of 6136334
  956082 words of memory out of 5000000
- 33662 multiletter control sequences out of 15000+600000
+ 33701 multiletter control sequences out of 15000+600000
  13703 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,10n,100p,8831b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,8n,100p,8831b,612s stack positions out of 5000i,500n,10000p,200000b,80000s
 <b:/Programs/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pf
-b><b:/Programs/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex
-8.pfb><b:/Programs/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi1
-0.pfb><b:/Programs/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6
-.pfb><b:/Programs/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.
-pfb><b:/Programs/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.p
-fb><b:/Programs/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pf
-b><b:/Programs/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb>
-<b:/Programs/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><b
-:/Programs/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-<b:/Programs/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-<b:/Programs/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
+b><b:/Programs/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pf
+b><b:/Programs/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
+><b:/Programs/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb>
+<b:/Programs/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
+b:/Programs/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><b
+:/Programs/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><b:/
+Programs/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><b:/Pr
+ograms/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><b:/
+Programs/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><b:/
+Programs/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><b:/P
+rograms/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><b:/Pr
+ograms/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><
 b:/Programs/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.
 pfb>
-Output written on "sheet 2 solution.pdf" (4 pages, 138561 bytes).
+Output written on "sheet 3 group 57.pdf" (4 pages, 134982 bytes).
 PDF statistics:
- 99 PDF objects out of 1000 (max. 8388607)
- 79 compressed objects within 1 object stream
- 20 named destinations out of 1000 (max. 500000)
+ 98 PDF objects out of 1000 (max. 8388607)
+ 77 compressed objects within 1 object stream
+ 16 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
