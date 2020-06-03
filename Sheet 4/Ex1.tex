@@ -1,0 +1,27 @@
+\section*{Exercise 1}
+From the given points the centered datamatrix \[A = \left[\begin{matrix}
+0&0&0\\3.5&0&0.5\\2.5&2&1.5\\-2.5&-2&-1.5\\-3.5&0&-0.5
+\end{matrix}\right]\] can be created.
+The covariance matrix \[C=A^TA = \left[\begin{matrix}
+37&10&11\\10&8&6\\11&6&5
+\end{matrix}\right]\] is derived from the datamatrix $A$.
+From the characterisitc polynominal of $C$ $-\lambda^3+50\lambda^2-264\lambda$ the eigenvalues \[\lambda_1 = 44, \lambda_2 = 6, \lambda_3 = 0\] can be calculated.
+Using the corresponding eigenvectors \[v_1 = \left(\begin{matrix}
+3\\1\\1
+\end{matrix}\right),v_2=\left(\begin{matrix}
+-1\\2\\1
+\end{matrix}\right), v_3 = \left(\begin{matrix}
+-1\\-4\\7
+\end{matrix}\right)\]
+the PCA-transformation \[U= \left[\begin{matrix}3 \sqrt{11} & -\sqrt{6} & -\sqrt{66}\\\sqrt{11}&2\sqrt{6}&-4\sqrt{66} \\ \sqrt{11} & \sqrt{6} & 7\sqrt{66} \end{matrix}\right]\] of $A$ can be calculated.
+Therefore the first and second principal components of $A$ are 
+\[\mathbb{P}_1 = \text{span}\left(\left(\begin{matrix}
+3\sqrt{11}\\\sqrt{11}\\\sqrt{11}
+\end{matrix}\right)\right),\mathbb{P}_2= \text{span}\left(\left(\begin{matrix}
+-\sqrt{6}\\2\sqrt{6}\\\sqrt{6}
+\end{matrix}\right)\right)\].
+That leads to the best fit subspaces \[\mathbb{U}_1 = \mathbb{P}_1, \mathbb{U}_2 = \text{span}\left(\sqrt{11}\left(\begin{matrix}
+3\\1\\1
+\end{matrix}\right),\sqrt{6}\left(\begin{matrix}
+-1\\2\\1
+\end{matrix}\right)\right)\]
