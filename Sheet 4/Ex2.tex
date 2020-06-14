@@ -1,0 +1,29 @@
+\section*{Exercise 2}
+\subsection*{a)}
+$A\in \mathbb{R}^{nxn}$ is a symetric matrix.
+Let $(a_i)_{i\in[n]}$ be the eigenvectors and $(\lambda_i)_{\lambda \in [n]}$ the eigenvalues.
+
+if $\lambda_i \ge 0$:
+
+We have $A=U\text{diag}(\lambda_i))U^T$ with $U \in \mathbb{R}^{nxn}$ ortogonal matrix.
+Let $x \in \mathbb{R}^n$ 
+\[x^TAx = x^TU\text{diag}(\lambda_i))U^Tx = \sum_{i=1}^{n}\lambda_i\left([U^Tx]_i\right)^2\ge0\].
+
+if $x^TAx \ge 0$:
+
+for $x = a_i$
+\[a_i^TAa_i = \lambda_ia_i^Ta_i\ge0 \text{and} a_i^Ta_i \ge0\].
+So $\lambda_i \ge 0$.
+
+\subsection*{b)}
+For \[A=\left(\begin{matrix}
+1&2\\3&1
+\end{matrix}\right)x=\left(\begin{matrix}
+1\\-1
+\end{matrix}\right)\]
+\[x^TAx = \left(\begin{matrix}
+1&-1
+\end{matrix}\right)\left(\begin{matrix}
+1&2\\3&1
+\end{matrix}\right)\left(\begin{matrix}1\\-1
+\end{matrix}\right) = -3 < 0\]
