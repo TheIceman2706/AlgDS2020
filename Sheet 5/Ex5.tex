@@ -1,0 +1,8 @@
+\section*{Exercise 5}
+To calculate the expected total aggregated runtime for a job of $n$ tasks we need to know the expected runtime of a task.\[E(R) = nE(R_1)\].
+
+The expected runtime of a task consists of the time the task itself takes $t$ and the expected additional recovery time $A_1$ \[E(R_1) = t + E(A_1)\].
+We know that a failure during the execution or the recovery of a task happens with probability $p_f \in[0,1)$.
+The probability for a task to fail $k$ times therefore is $p_f^k$.
+With every recovery takeing $10t$ this yields a expected additional recovery time \[E(A_1) = 10t\sum_{k=1}^{\infty}kp^k = 10t\frac{p_f}{(p_f-1)^2}\].
+Therefore the expected total accumulated runtime is \[E(R) = n\left(t+10t  \frac{p_f}{(p_f-1)^2}\right)\].
