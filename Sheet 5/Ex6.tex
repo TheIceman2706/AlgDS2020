@@ -1,0 +1,23 @@
+\section*{Exercise 6}
+\subsection*{a)}
+\paragraph*{Map:}
+Input: \[(P,\text{Friends}_P)\]
+Output: \[(\lbrace P_1, P_2\rbrace,\lbrace \text{Friends}_{P_1},\text{Friends}_{P_2} \rbrace )\]
+\paragraph*{Reduce:}
+Input:
+\[(\lbrace P_1, P_2\rbrace,\lbrace \text{Friends}_{P_1},\text{Friends}_{P_2} \rbrace )\]
+Output: \[(\lbrace P_1, P_2\rbrace,\lbrace P|P\in \text{Friends}_{P_1} \wedge P\in \text{Friends}_{P_2} \rbrace )\]
+
+\subsection*{b)}
+\paragraph*{Map:}
+Input: \[(P,\text{Friends}_P)\]
+Output: \[(P,\text{Friends}_F ) \forall F\in \text{Friends}_P\]
+\paragraph*{Reduce:}
+Input:
+\[(P,\text{Friends}_F )\]
+
+Select 10 values $\text{Friends}_F$.
+From every value select one person $F_i \neq P$.
+
+Output: 
+\[(P,\lbrace F_i \rbrace)\]
