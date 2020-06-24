@@ -1,0 +1,29 @@
+
+\section*{Exercise 4}
+
+We want to sample from the probability space (U,P), but now
+we assume that $U = D^{l}$ for some finite set D.
+
+We define the transition matrix $Q = (q_{uv}) \in R^{U\times U}$ of a Markov chain as
+follows. Let $u = (u_{1}, . . . , u_{l}),v = (v_{1}, . . . , v_{l}) \in U.$
+
+\begin{itemize}
+    \item If u and v differ in more than one elements then $q_{uv}=q_{vu}=0$.
+    
+    So $P(u)q_{uv}=P(v)q_{vu}=0.$
+    \item If there is exactly one $i\in [l]$ such that $u_{i}\neq v_{i}$ then $q_{uv}=\frac{1}{l}P(v_{i}/u_{1},..,u_{i-1},u_{i+1},...,u_{l})$  and $q_{vu}=\frac{1}{l}P(u_{i}/v_{1},..,v_{i-1},v_{i+1},...,v_{l})$. So : 
+    
+     $P(u)q_{uv}=\frac{1}{l}P(u)P(v_{i}/u_{1},..,u_{i-1},u_{i+1},...,u_{l})$
+     
+     $P(u)q_{vu}=\frac{1}{l}P(u)\frac{P(v)}{\sum_{v\in D} P(u_{1},..,u_{i-1},v,u_{i+1},...,u_{l})}$
+     
+     $P(u)q_{vu}=\frac{1}{l}P(v)\frac{P(u)}{\sum_{v\in D} P(v_{1},..,v_{i-1},v,v_{i+1},...,v_{l})}$
+     
+     $P(u)q_{uv}=\frac{1}{l}P(v)P(u_{i}/v_{1},..,v_{i-1},v_{i+1},...,v_{l})$
+     
+     $P(u)q_{uv}=P(v)q_{vu}$
+     \item If u=v then $P(u)q_{uv}=P(v)q_{vu}$
+     
+\end{itemize}
+
+So from Lemma 6.4 we conclude that the probability distribution P is the unique stationary distribution of the Markov chain.

@@ -1,0 +1,20 @@
+\section*{Exercise 2}
+In this case we have a connected Markov chain because in the given directed graph $G_Q$ there is a path from $i$ to $j$ for all $i,j\in\left[n\right]$.
+So the Lemma 6.4 holds ($\pi_iq_{ij}=\pi_jq_{ij}$).
+The transition matrix is  \[Q=\left(\begin{matrix}
+\frac{13}{24}&\frac{1}{12}&\frac{3}{8}&0\\
+\frac{1}{2}&0&\frac{1}{4}&\frac{1}{4}\\
+\frac{3}{4}&\frac{1}{12}&0&\frac{1}{6}\\
+0&\frac{1}{8}&\frac{1}{4}&\frac{5}{8}
+\end{matrix}\right)\]
+
+Argument (1): The transition matrix $Q$ is a stochastic matrix, that is, all entries are non-negative and all row sums are 1.\\
+Entry $q_{24}$: argument (1): $q_{24}=1-0.5 -0.25  =0.25 \Rightarrow q_{24} = 0.25$\\
+Entry $q_{32}$: $\pi_3q_{32} = \pi_2q_{23}\Leftrightarrow0.25q_{32}= \frac{1}{12}\cdot\frac{1}{4}\Leftrightarrow q_{32} = \frac{1}{12}$\\
+Entry $q_{34}$: argument (1): $q_{34}=1-0.75 -\frac{1}{12}\Rightarrow q_{34} = \frac{1}{6}$\\
+Entry $q_{42}$: $\pi_4q_{42} = \pi_2q_{24}\Leftrightarrow\frac{1}{6}q_{42}= \frac{1}{12}\cdot\frac{1}{4}\Leftrightarrow q_{42} = \frac{1}{8}$\\
+Entry $q_{43}$: $\pi_4q_{43} = \pi_3q_{34}\Leftrightarrow\frac{1}{6}q_{43}= \frac{1}{6}\cdot\frac{1}{4}\Leftrightarrow q_{43} = \frac{1}{4}$\\
+Entry $q_{44}$: argument (1): $q_{44}=1-\frac{1}{8} -\frac{1}{12}\Rightarrow q_{44} = \frac{5}{8}$\\
+Entry $q_{13}$: $\pi_1q_{13} = \pi_3q_{31}\Leftrightarrow0.5q_{13}= \frac{1}{4}\cdot\frac{3}{4}\Leftrightarrow q_{13} = \frac{3}{8}$\\
+Entry $q_{12}$: $\pi_1q_{12} = \pi_2q_{21}\Leftrightarrow0.5q_{12}= \frac{1}{12}\cdot\frac{1}{2}\Leftrightarrow q_{12} = \frac{1}{12}$\\
+Entry $q_{11}$: argument (1): $q_{11}=1-0-\frac{3}{8} -\frac{1}{12}\Rightarrow q_{11} = \frac{13}{24}$\\
